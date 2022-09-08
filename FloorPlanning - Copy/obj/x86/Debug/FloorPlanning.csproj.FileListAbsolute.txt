@@ -1,0 +1,81 @@
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\FloorPlanning.exe.config
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\FloorPlanning.exe.manifest
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\FloorPlanning.application
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\FloorPlanning.exe
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\FloorPlanning.pdb
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewLine.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.UCLine.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormCustomZoom.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormChangeValFinish.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewShape.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.UCFinish.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormSaveAsProject.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.DrawingForm.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindow.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindowCanvas.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewProject.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FloorPlanningSplash.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.Properties.Resources.resources
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.csproj.GenerateResource.Cache
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.licenses
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.manifest
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.application
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.exe
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.pdb
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.csprojResolveAssemblyReference.cache
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\bin\Debug\pdf2png.exe
+D:\ABC\A_FloorPlanning\FloorPlanning_Code\FloorPlanning\obj\x86\Debug\FloorPlanning.FormShortcuts.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe.config
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.pdb
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\pdf2png.exe
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe.manifest
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.application
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.pdb
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.csprojResolveAssemblyReference.cache
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewLine.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormShortcuts.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.UCLine.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormCustomZoom.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormChangeValFinish.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewShape.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.UCFinish.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormSaveAsProject.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.DrawingForm.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindow.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindowCanvas.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewProject.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FloorPlanningSplash.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Properties.Resources.resources
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.csproj.GenerateResource.Cache
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.licenses
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.manifest
+D:\ABC\A_FloorPlanning\source_git\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.application
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\pdf2png.exe
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe.config
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe.manifest
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.application
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.exe
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\bin\Debug\FloorPlanning.pdb
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewLine.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormShortcuts.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.UCLine.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormCustomZoom.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormChangeValFinish.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewShape.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.UCFinish.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormSaveAsProject.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.DrawingForm.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindow.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Display.PageWindowCanvas.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FormNewProject.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.FloorPlanningSplash.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.Properties.Resources.resources
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.csproj.GenerateResource.Cache
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.licenses
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe.manifest
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.application
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.exe
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.pdb
+D:\Tan Data\Anh Son\Source\git_source\floorplanning\FloorPlanning\obj\x86\Debug\FloorPlanning.csprojResolveAssemblyReference.cache

@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C7B894CB-5D3B-4DC5-9DAE-D7205D837BEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FloorPlanning</RootNamespace>
+    <AssemblyName>FloorPlanning</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Git\PlanDraw\PlanDraw\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://www.buildsafe.net.au</SupportUrl>
+    <TargetCulture>en-AU</TargetCulture>
+    <ProductName>PlanDraw 3.0</ProductName>
+    <PublisherName>Buildsafe</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>3.1.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A6637195435B73482D8B9A1FAF2228EB874BF363</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PlanDraw_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>FloorPlanning.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>libs\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>libs\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Math">
+      <HintPath>libs\AForge.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="cs-pdf-to-image, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Pdf2Png.1.0.2\lib\net452\Release\cs-pdf-to-image.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Core.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Core.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Shared.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Undo.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Undo.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.AppStylistSupport.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.AppStylistSupport.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.Shared.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.Shared.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraDataChart.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraDataChart.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGauges.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraGauges.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraGeographicMap.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraGeographicMap.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.DataVisualization.UltraSparkline.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.DataVisualization.UltraSparkline.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Misc.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Misc.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.Portable.Core.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.Portable.Core.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.SupportDialogs.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.SupportDialogs.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraChart.v18.1.Design, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraChart.v18.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraGauge.v18.1.Design, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraGauge.v18.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCalcManager.v18.1.FormulaBuilder, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCalcManager.v18.1.FormulaBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinCarousel.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinCarousel.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinChart.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinChart.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDataSource.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDataSource.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinDock.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinDock.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinEditors.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinExplorerBar.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinExplorerBar.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinFormattedText.WordWriter.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinFormattedText.WordWriter.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGanttView.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGanttView.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGauge.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGauge.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.DocumentExport.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.ExcelExport.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.WordWriter.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinGrid.WordWriter.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinInkProvider.Ink17.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinInkProvider.Ink17.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListBar.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListBar.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinListView.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinListView.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinLiveTileView.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinLiveTileView.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinMaskedEdit.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinMaskedEdit.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinOfficeNavBar.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinOfficeNavBar.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinPivotGrid.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinPivotGrid.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinRadialMenu.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinRadialMenu.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinStatusBar.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinStatusBar.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabbedMdi.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabControl.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinTabControl.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.UltraWinToolbars.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v18.1, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v18.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v18.1.Design, Version=18.1.20181.177, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\infragistics\2018.1\Windows Forms\CLR4.0\Bin\Infragistics4.Win.v18.1.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>libs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>libs\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\FormNewLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormNewLine.Designer.cs">
+      <DependentUpon>FormNewLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FormShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormShortcuts.Designer.cs">
+      <DependentUpon>FormShortcuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\enums\ShortcutsAction.cs" />
+    <Compile Include="Models\Scale.cs" />
+    <Compile Include="Models\Shortcuts.cs" />
+    <Compile Include="UCLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCLine.Designer.cs">
+      <DependentUpon>UCLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRightGroup.cs" />
+    <Compile Include="Dialogs\FormCustomZoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormCustomZoom.Designer.cs">
+      <DependentUpon>FormCustomZoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FormChangeValFinish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormChangeValFinish.Designer.cs">
+      <DependentUpon>FormChangeValFinish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FormNewShape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormNewShape.Designer.cs">
+      <DependentUpon>FormNewShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FormSaveAsProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormSaveAsProject.Designer.cs">
+      <DependentUpon>FormSaveAsProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display\enums\EditMode.cs" />
+    <Compile Include="DrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingForm.Designer.cs">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Component.cs" />
+    <Compile Include="Models\Finish.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompatiblePDFReader.cs" />
+    <Compile Include="Models\DrawingEntity.cs" />
+    <Compile Include="Models\DrawingOp.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="enums\CommandMode.cs" />
+    <Compile Include="Models\FloorPlanning.cs" />
+    <Compile Include="Models\DrawingDoc.cs" />
+    <Compile Include="Display\PageWindowCanvas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Display\DeviceInfos.cs" />
+    <Compile Include="Display\enums\Zoom.cs" />
+    <Compile Include="Display\PageWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormNewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FormNewProject.Designer.cs">
+      <DependentUpon>FormNewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCFinish.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCFinish.Designer.cs">
+      <DependentUpon>UCFinish.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dialogs\FormNewLine.resx">
+      <DependentUpon>FormNewLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormShortcuts.resx">
+      <DependentUpon>FormShortcuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UCLine.resx">
+      <DependentUpon>UCLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormCustomZoom.resx">
+      <DependentUpon>FormCustomZoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormChangeValFinish.resx">
+      <DependentUpon>FormChangeValFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormNewShape.resx">
+      <DependentUpon>FormNewShape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCFinish.resx">
+      <DependentUpon>UCFinish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormSaveAsProject.resx">
+      <DependentUpon>FormSaveAsProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawingForm.resx">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="FodyWeavers.xml" />
+    <None Include="img\icon.png" />
+    <None Include="img\splash.jpg" />
+    <None Include="img\icon.ico" />
+    <Content Include="icon.ico" />
+    <None Include="img\areamode64.png" />
+    <None Include="img\drawmode64.png" />
+    <None Include="img\fitheight64.png" />
+    <None Include="img\fitwidth64.png" />
+    <None Include="img\icon64centered.png" />
+    <None Include="img\linemode64.png" />
+    <None Include="img\panmode64.png" />
+    <None Include="img\pdf64.png" />
+    <None Include="img\save64.png" />
+    <None Include="img\save64as.png" />
+    <None Include="img\zoomin64.png" />
+    <None Include="img\zoomout64.png" />
+    <None Include="img\zoompercent64.png" />
+    <None Include="img\open64.png" />
+    <None Include="img\hidesettings64.png" />
+    <None Include="img\showsettings64.png" />
+    <None Include="img\selectcolors64.png" />
+    <None Include="img\counters64.png" />
+    <None Include="img\aligntogrid64.png" />
+    <None Include="img\measureline64.png" />
+    <None Include="img\customscale64.png" />
+    <None Include="img\editlines64.png" />
+    <None Include="img\editarea64.png" />
+    <None Include="img\hideimage64.png" />
+    <None Include="img\showimage64.png" />
+    <None Include="img\greyareas64.png" />
+    <None Include="img\hideareas64.png" />
+    <None Include="img\showareas64.png" />
+    <None Include="img\filterlines64.png" />
+    <None Include="img\filterareas64.png" />
+    <None Include="img\hideimage32.png" />
+    <None Include="img\hideareas32.png" />
+    <None Include="img\greyareas32.png" />
+    <None Include="img\fitwidth32.png" />
+    <None Include="img\fitheight32.png" />
+    <None Include="img\filterlines32.png" />
+    <None Include="img\filterareas32.png" />
+    <None Include="img\editlines32.png" />
+    <None Include="img\editarea32.png" />
+    <None Include="img\drawmode32.png" />
+    <None Include="img\customscale32.png" />
+    <None Include="img\counters32.png" />
+    <None Include="img\areamode32.png" />
+    <None Include="img\aligntogrid32.png" />
+    <None Include="img\hidesettings32.png" />
+    <None Include="img\zoompercent32.png" />
+    <None Include="img\zoomout32.png" />
+    <None Include="img\zoomin32.png" />
+    <None Include="img\showsettings32.png" />
+    <None Include="img\showimage32.png" />
+    <None Include="img\showareas32.png" />
+    <None Include="img\selectcolors32.png" />
+    <None Include="img\saveas32.png" />
+    <None Include="img\save32.png" />
+    <None Include="img\pdf32.png" />
+    <None Include="img\panmode32.png" />
+    <None Include="img\open32.png" />
+    <None Include="img\measureline32.png" />
+    <None Include="img\linemode32.png" />
+    <None Include="img\new32.png" />
+    <None Include="img\editarea16.png" />
+    <None Include="img\editlines16.png" />
+    <None Include="img\filterareas16.png" />
+    <None Include="img\filterlines16.png" />
+    <None Include="img\fitheight16.png" />
+    <None Include="img\fitwidth16.png" />
+    <None Include="img\greyareas16.png" />
+    <None Include="img\hideareas16.png" />
+    <None Include="img\hideimage16.png" />
+    <None Include="img\linemode16.png" />
+    <None Include="img\new16.png" />
+    <None Include="img\measureline16.png" />
+    <None Include="img\open16.png" />
+    <None Include="img\panmode16.png" />
+    <None Include="img\pdf16.png" />
+    <None Include="img\save16.png" />
+    <None Include="img\saveas16.png" />
+    <None Include="img\selectcolors16.png" />
+    <None Include="img\showareas16.png" />
+    <None Include="img\showimage16.png" />
+    <None Include="img\showsettings16.png" />
+    <None Include="img\zoomin16.png" />
+    <None Include="img\zoomout16.png" />
+    <None Include="img\zoompercent16.png" />
+    <None Include="img\hidesettings16.png" />
+    <None Include="img\aligntogrid16.png" />
+    <None Include="img\areamode16.png" />
+    <None Include="img\counters16.png" />
+    <None Include="img\customscale16.png" />
+    <None Include="img\drawmode16.png" />
+    <None Include="img\areasettings16.png" />
+    <None Include="img\linesettings16.png" />
+    <None Include="img\seamsettings16.png" />
+    <None Include="img\areaeditsettings16.png" />
+    <None Include="img\lineeditsettings16.png" />
+    <None Include="img\lineeditsettings32.png" />
+    <None Include="img\areaeditsettings32.png" />
+    <None Include="img\seamsettings32.png" />
+    <None Include="img\linesettings32.png" />
+    <None Include="img\areasettings32.png" />
+    <EmbeddedResource Include="Display\PageWindow.resx">
+      <DependentUpon>PageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display\PageWindowCanvas.resx">
+      <DependentUpon>PageWindowCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FormNewProject.resx">
+      <DependentUpon>FormNewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\FloorPlanning.Properties.Settings.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\SettingsDialog.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\okicon48.png" />
+    <None Include="img\cancelicon48.png" />
+    <None Include="img\singleline.png" />
+    <None Include="img\doubleline.png" />
+    <None Include="img\dashDotLine.png" />
+    <None Include="img\dashLine.png" />
+    <None Include="img\dotLine.png" />
+    <None Include="img\solidLine.png" />
+    <Content Include="pdf2png.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Fody.3.1.4\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.3.1.4\build\Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.3.1.0\build\Costura.Fody.targets')" />
+  <Import Project="..\packages\Fody.3.1.4\build\Fody.targets" Condition="Exists('..\packages\Fody.3.1.4\build\Fody.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="FloorPlanning.exe" version="3.1.3.2" publicKeyToken="0000000000000000" language="en-AU" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="FloorPlanning" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="FloorPlanning.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Documents.Core.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Documents.Excel.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Documents.IO.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Documents.Reports.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.Core.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataProvider.Adomd.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataProvider.Flat.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataProvider.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataProvider.Xmla.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataSource.Flat.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataSource.Mdx.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataSource.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Olap.DataSource.Xmla.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Shared.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Undo.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.AppStylistSupport.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.DataVisualization.Shared.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.DataVisualization.UltraDataChart.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.DataVisualization.UltraGauges.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.DataVisualization.UltraGeographicMap.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.DataVisualization.UltraSparkline.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.Misc.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.Portable.Core.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.SupportDialogs.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraChart.v18.1.Design" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraGauge.v18.1.Design" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinCalcManager.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinCalcManager.v18.1.FormulaBuilder" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinCarousel.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinChart.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinDataSource.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinDock.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinEditors.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinExplorerBar.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinFormattedText.WordWriter.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGanttView.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGauge.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGrid.DocumentExport.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGrid.ExcelExport.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGrid.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinGrid.WordWriter.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinInkProvider.Ink17.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinListBar.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinListView.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinLiveTileView.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinMaskedEdit.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinOfficeNavBar.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinPivotGrid.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinPrintPreviewDialog.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinRadialMenu.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinSchedule.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinSpellChecker.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinSpreadsheet.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinStatusBar.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinTabbedMdi.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinTabControl.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinToolbars.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.UltraWinTree.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.v18.1" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Infragistics4.Win.v18.1.Design" version="18.1.20181.177" publicKeyToken="7DD5C3163F2CD0CB" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Ink" version="1.7.2600.2180" publicKeyToken="31BF3856AD364E35" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.dll" size="19968">
+      <assemblyIdentity name="AForge" version="2.2.3.0" publicKeyToken="C1DB6FF4EAA06AEB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Ldfs5b82Qz2qxTELG/8ShPwZRFLl6EWo5NDOw9xx8RM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Imaging.dll" size="286720">
+      <assemblyIdentity name="AForge.Imaging" version="2.2.3.0" publicKeyToken="BA8DDEA9676CA48B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8M8ZMO2H7w5zxDJ82bPLU1G6Wfe0bBNuKqBX//ovjqY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Math.dll" size="76288">
+      <assemblyIdentity name="AForge.Math" version="2.2.3.0" publicKeyToken="ABBA2E25397EE8C9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+cyCJ50qwzzoG85gEJx8DVnB71KY7+BKdWdRMd9hj68=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="cs-pdf-to-image.dll" size="8858624">
+      <assemblyIdentity name="cs-pdf-to-image" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5P7+JmcoNQeIfju96Q5mDFue4A6Z1ZOReSbveTwjyKQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FloorPlanning.exe" size="10319360">
+      <assemblyIdentity name="FloorPlanning" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>7D/B4cfLcYLNiGRvfqZZrY82iiNqtk5vCIrBunp/Kuo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="itextsharp.dll" size="3694592">
+      <assemblyIdentity name="itextsharp" version="4.1.6.0" publicKeyToken="8354AE6D2174DDCA" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>C9/Ek/KXXYCYYVuIJvAUlLFNLiYFuC0KVYD5PxmEBpM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PdfSharp.dll" size="655360">
+      <assemblyIdentity name="PdfSharp" version="1.32.2608.0" publicKeyToken="F94615AA0424F9EB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T2NGGqtFFl/445MnZRrVWNPIkjm+chXdcmG/m78SKts=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="FloorPlanning.exe.config" size="263">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j+gHPEZ2GxRYO6HOYcTzbQV/ZQEbm2OQoOn9JZPnYVM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icon.ico" size="370070">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JsvlOSiVzs5QRcbyHi/fMA9p9QpOobNVq2FjIPy4d7I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="pdf2png.exe" size="8286208">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sSeTZthQwvH0ASygMI0uVywO29QU0san0m0BT7CvmOI=</dsig:DigestValue>
+    </hash>
+  </file>
+</asmv1:assembly>
